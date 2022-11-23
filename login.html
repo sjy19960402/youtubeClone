@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Mobile</title>
+     <!-- css -->
+     <link rel="stylesheet" href="./style/reset.css" type="text/css">
+     <link rel="stylesheet" href="./style/login.css" type="text/css">
+     <!-- 폰트어썸 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+    <!-- 카카오 login API -->
+    <script defer src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script defer src="/js/kakaoLogin.js"></script>
+    <!-- google login API -->
+    <script defer src="/js/googleLogin.js"></script>
+    <!-- naver login API -->
+    <script defer src="/js/naverLogin.js"></script>
+</head>
+<body>
+  <div class="login-box">
+    <a id="kakao-login-btn" href="javascript:kakaoLogin()">
+      <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222"
+        alt="카카오 로그인 버튼" />
+    </a>
+    <p id="token-result"></p>
+    <a href="http://developers.kakao.com/logout">카카오 로그아웃</a>
+  </div>
+  </body>
+  </html>

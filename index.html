@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Mobile</title>
+     <!-- css -->
+     <link rel="stylesheet" href="./style/reset.css" type="text/css">
+     <link rel="stylesheet" href="./style/style.css" type="text/css">
+     <!-- 폰트어썸 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 유튜브 iframe API -->
+    <script defer src="/js/youtubePlay.js"></script>
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <header>
+        <h1><a href="index.html" title="상단로고">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </a></h1>
+        <div class="icons">
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </header>
+
+    <main>
+    <!-- 메인콘텐츠: video player -->
+    <section class="player">
+        <!-- iframe api -->
+        <div id="player" class="youtube" data-url=""></div>
+    </section>
+
+    <!-- 메인콘텐츠: video info -->
+    <section class="info">
+         <!-- metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#10cm</li>
+                <li>#권정열</li>
+                <li>#가진다는 말은 좀 그렇지?</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">
+                    10CM / 십센치 - 가진다는 말은 좀 그렇지? (There's No Way...) [M/V] | 10cm 공식사이트 뮤직비디오
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+                <span class="views">42M views 1 month ago</span>
+        </div>
+        <!-- actions -->
+        <ul class="actions">
+            <li><button><i class="active fas fa-thumbs-up"></i><span>1k</span></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+            <li><button><i class="fas fa-share"></i><span>share</span></button></li>
+            <li><button><i class="fas fa-plus"></i><span>save</span></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+        </ul>
+        <!-- channel description -->
+        <div class="channel">
+            <div class="metadata">
+                <img src="img/profile.png" alt="프로필사진">
+            <div class="info">
+                <span class="name">10CM_Official</span>
+                <span class="subscribers">40M subscribers</span>
+            </div>
+            </div>
+            <button class="subscribe">subscribe</button>
+        </div>
+    </section>
+    <!-- 메인콘텐츠: next video -->
+    <section class="upNext">
+        <h2 class="title">Up Next</h2>
+        <ul>
+            <li class="item">
+                <div class="img">
+                    <!-- 썸네일 -->
+                    <img src="/img/img01.png" alt="">
+            </div>
+                <div class="info">
+                    <span class="title">10CM의 킬링보이스를 라이브로! - 폰서트, 매트리스, pet, 봄이좋냐??, TV를껐네, Perfect, 입김, 스토커, 사랑은은하수다방에서, 아메리카노 ㅣ 딩고뮤직</span>
+                    <span class="name">딩고 뮤직/dingo music</span>
+                    <span class="views">90K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+
+            <li class="item">
+                <div class="img">
+                <!-- 썸네일 -->
+                <img src="/img/img02.png" alt="">
+            </div>
+                <div class="info">
+                    <span class="title">10CM(십센치 권정열) – pet 《고막메이트/고막라이브》</span>
+                    <span class="name">방언니 - 방송국에 사는 언니들</span>
+                    <span class="views">38K views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+
+            <li class="item">
+                <div class="img">
+                <!-- 썸네일 -->
+                <img src="/img/img03.png" alt="">
+            </div>
+                <div class="info">
+                    <span class="title">10CM / 십센치 - 어제 너는 나를 버렸어 (Yesterday You Left Me) [Live M/V]</span>
+                    <span class="name">10CM_Official</span>
+                    <span class="views">24M views</span>
+                </div>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>

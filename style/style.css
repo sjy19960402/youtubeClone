@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* basic 설정 */
+:root{
+    /* color */
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    /* size */
+    --padding: 12px;
+    --avatar-size: 36px;
+
+    /* font size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+}
+
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+button,
+button:focus{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color:transparent;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--padding)*1.4);
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+header h1 {
+    font-size: var(--font-large);
+}
+
+header h1 i {
+    color: var(--red-color);
+}
+
+header .title{
+    color: var(--white-color);
+}
+
+header .icons .fa-user-circle{
+    margin-right: var(--padding);
+    color: var(--white-color);
+    font-size: var(--font-large);
+}
+
+/* video player */
+.player{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: var(--black-color);
+}
+.player iframe{
+    width: 100%;
+    height: 320px;
+    max-width: 1000px;
+}
+
+/* viedo info */
+main > .info{
+    padding: var(--padding);
+}
+.hashtags{
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--blue-color);
+    margin-bottom: calc(var(--padding)/2);
+}
+.hashtags li{
+    margin-right: var(--padding);
+}
+.info .metadata .titleAndButton .title{
+    font-size: var(--font-medium);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-right: var(--padding);
+}
+.info .metadata .titleAndButton .moreBtn{
+    height: 100%;
+}
+.info .views{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+/* actions */
+.actions{
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+.actions button{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.actions button i{
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding) / 2);
+    font-size: 16px;
+}
+.actions button i.active{
+    color: var(--blue-color);
+}
+
+/* channel description */
+.channel{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+    padding: var(--padding);
+}
+.channel .metadata{
+    display: flex;
+    align-items: center;
+}
+.channel .metadata img{
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+.channel .metadata .info .name{
+    font-size: var(--font-medium);
+}
+.channel .metadata .info .subscribers{
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.channel .subscribe{
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+
+/* up next */
+.upNext{
+    padding: 0 var(--padding);
+}
+.upNext > .title{
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--padding)/2);
+}
+.upNext .item{
+    display: flex;
+    margin-top: var(--padding);
+}
+.upNext .item .img{
+    flex: 1 1 35%;
+    margin-right: var(--padding);
+}
+.upNext .item .img img{
+    width: 100%;
+} 
+.upNext .item .info{
+    flex: 1 1 60%;
+}
+.upNext .item .moreBtn{
+    flex: 1 1 5%;
+}
+.upNext .item .info{
+    display: flex;
+    flex-direction: column;
+}
+.upNext .item .info .title{
+    font-size: var(--font-small);
+}
+.upNext .item .info .name,
+.upNext .item .info .views{
+    font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
